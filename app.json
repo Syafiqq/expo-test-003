@@ -33,6 +33,17 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-sqlite",
+        {
+          "enableFTS": false,
+          "useSQLCipher": false,
+          "android": {
+          },
+          "ios": {
+          }
+        }
       ]
     ],
     "experiments": {
