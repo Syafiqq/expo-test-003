@@ -7,6 +7,7 @@ type TypesMap = {
   // datasource/local
   sqliteService: symbol;
   localStorage: symbol;
+  todoLocalDataSource: symbol;
 };
 
 const Types: TypesMap = {
@@ -16,6 +17,7 @@ const Types: TypesMap = {
 
   sqliteService: Symbol.for('SQLiteService'),
   localStorage: Symbol.for('LocalStorage'),
+  todoLocalDataSource: Symbol.for('TodoLocalDataSource'),
 }
 
 export {
