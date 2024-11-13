@@ -15,6 +15,7 @@ type TypesMap = {
 
   // repository
   authRepository: symbol;
+  todoRepository: symbol;
 };
 
 const Types: TypesMap = {
@@ -30,6 +31,7 @@ const Types: TypesMap = {
   authRemoteDataSource: Symbol.for('AuthRemoteDataSource'),
 
   authRepository: Symbol.for('AuthRepository'),
+  todoRepository: Symbol.for('TodoRepository'),
 }
 
 export {
