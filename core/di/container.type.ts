@@ -16,6 +16,9 @@ type TypesMap = {
   // repository
   authRepository: symbol;
   todoRepository: symbol;
+
+  // use-case
+  checkAuthenticationUseCase: symbol;
 };
 
 const Types: TypesMap = {
@@ -32,6 +35,8 @@ const Types: TypesMap = {
 
   authRepository: Symbol.for('AuthRepository'),
   todoRepository: Symbol.for('TodoRepository'),
+
+  checkAuthenticationUseCase: Symbol.for('CheckAuthenticationUseCase'),
 }
 
 export {
