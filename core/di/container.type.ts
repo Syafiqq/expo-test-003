@@ -19,6 +19,7 @@ type TypesMap = {
 
   // use-case
   checkAuthenticationUseCase: symbol;
+  loginUseCase: symbol;
 };
 
 const Types: TypesMap = {
@@ -37,6 +38,7 @@ const Types: TypesMap = {
   todoRepository: Symbol.for('TodoRepository'),
 
   checkAuthenticationUseCase: Symbol.for('CheckAuthenticationUseCase'),
+  loginUseCase: Symbol.for('LoginUseCase'),
 }
 
 export {
