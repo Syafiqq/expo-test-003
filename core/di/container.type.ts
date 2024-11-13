@@ -12,6 +12,9 @@ type TypesMap = {
   // datasource/remote
   remoteService: symbol;
   authRemoteDataSource: symbol;
+
+  // repository
+  authRepository: symbol;
 };
 
 const Types: TypesMap = {
@@ -25,6 +28,8 @@ const Types: TypesMap = {
 
   remoteService: Symbol.for('RemoteService'),
   authRemoteDataSource: Symbol.for('AuthRemoteDataSource'),
+
+  authRepository: Symbol.for('AuthRepository'),
 }
 
 export {
