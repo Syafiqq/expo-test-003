@@ -11,6 +11,7 @@ type TypesMap = {
 
   // datasource/remote
   remoteService: symbol;
+  authRemoteDataSource: symbol;
 };
 
 const Types: TypesMap = {
@@ -23,6 +24,7 @@ const Types: TypesMap = {
   todoLocalDataSource: Symbol.for('TodoLocalDataSource'),
 
   remoteService: Symbol.for('RemoteService'),
+  authRemoteDataSource: Symbol.for('AuthRemoteDataSource'),
 }
 
 export {
