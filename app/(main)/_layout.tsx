@@ -1,8 +1,15 @@
 import 'reflect-metadata';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import {Stack, Tabs} from 'expo-router';
+import {Redirect, Stack, Tabs} from 'expo-router';
+import {useAuth} from "@/core/presentation/store/auth-store";
 
 export default function TabLayout() {
+  const status = useAuth.use.status();
+
+  if (status === 'signOut') {
+    return <Redirect href="/login"/>;
+  }
+
   return (
     <>
       <Stack.Screen
