@@ -1,5 +1,5 @@
 import {Stack} from "expo-router";
-import SplashScreenLayout from "@/components/page/splash-screen-layout";
+import LoginPageLayout from "@/components/page/login/login-page-layout";
 
 export default function Index() {
   return (
@@ -9,7 +9,7 @@ export default function Index() {
           headerShown: false,
         }}
       />
-      <SplashScreenLayout/>
+      <LoginPageLayout/>
     </>
   );
 }
