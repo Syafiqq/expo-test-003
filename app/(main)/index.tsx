@@ -1,9 +1,10 @@
 import {StyleSheet, Text, View} from 'react-native';
+import TodosPageLayout from "@/components/page/todo/todos/todos-page-layout";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Tab Home</Text>
+      <TodosPageLayout/>
     </View>
   );
 }
@@ -11,7 +12,5 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });
